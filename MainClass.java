@@ -12,7 +12,7 @@ public class MainClass {
 	private static  Scanner sc =new Scanner(System.in);
 	private static boolean run=true;
 	private static int count=0;
-	private static int dummyTest;
+
 
 	public static void case6()
 	{
@@ -282,12 +282,15 @@ public class MainClass {
 
 		while(true)
 		{
+			System.out.println("Main Loop");
 			System.out.println("For Admin enter 1 \r\nFor Student enter 2 ");
 			int temp1 =sc.nextInt();
 			run=true;
 			if(temp1==1)
 			{
 				while(run) {
+					System.out.println("Second Loop");
+
 				System.out.println("OPERATIONS \r\n To add book enter 1 \r\n To remove book enter 2 \r\n To update book enter 3 \r\n To issue book enter 4\r\n To return book enter 5\r\n To search book enter 6\r\n For detailed search enter 7 \r\n press 0 to go back from any window");
 				int temp2=sc.nextInt();
 				
@@ -326,9 +329,10 @@ public class MainClass {
 					case7();
 				}
 				
-				if(sc.nextInt()==0)
+				else if(temp2==0)
 				{
 					run=false;
+					temp1=0;
 				}
 
 			}
