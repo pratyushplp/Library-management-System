@@ -12,7 +12,7 @@ public class MainClass {
 	private static  Scanner sc =new Scanner(System.in);
 	private static boolean run=true;
 	private static int count=0;
-
+	private static int dummyTest;
 
 	public static void case6()
 	{
